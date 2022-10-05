@@ -83,7 +83,7 @@ select {
     --clr-gallery-li-border: #EEEEEE;
     
     
-    --main-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
     --icons-bg: #AFB1B8;
 
@@ -216,6 +216,7 @@ body {
     line-height: 1.71;
 
 }
+
 .section-three{
     background-color: var(--bg-white);
 }
@@ -322,7 +323,7 @@ body {
     border-radius: 50%;
     outline: none;
 
-    transition: background-color 250ms var(--main-transition);
+    transition: background-color 250ms var(--transition-cubic-bezier);
 }
 
 .section-four__icon-wrapper:hover,
@@ -333,7 +334,7 @@ body {
 
 .section-four__svg{
     fill: var(--icons-bg);
-    transition: fill 250ms var(--main-transition);
+    transition: fill 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -405,7 +406,7 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    transition: color 250ms var(--main-transition);
+    transition: color 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -476,7 +477,6 @@ letter-spacing: 0.03em;
 .hidden{
     font-size: 0.1px;
     color: transparent;
-
 }
 
 /*====================================*/
@@ -494,7 +494,7 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--clr-white );
     width: 231px;
 }
 
@@ -542,9 +542,9 @@ letter-spacing: 0.03em;
     border-radius: 4px;
     border: none;
 
-    transition: background-color 250ms var(--main-transition),
-                color 250ms var(--main-transition),
-                box-shadow 250ms var(--main-transition);
+    transition: background-color 250ms var(--transition-cubic-bezier),
+                color 250ms var(--transition-cubic-bezier),
+                box-shadow 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -580,7 +580,7 @@ letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--clr-paragraph-primary);
 
-    transition: box-shadow 250ms var(--main-transition);
+    transition: box-shadow 250ms var(--transition-cubic-bezier);
 }
 
 .portfolio-cards__link:visited{
@@ -618,7 +618,7 @@ letter-spacing: 0.03em;
     line-height: 1.55;
     width: 100%;
     height: 100%;
-    transition: transform 250ms var(--main-transition);
+    transition: transform 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -632,11 +632,11 @@ letter-spacing: 0.03em;
 
 .portfolio-cards__li-wrapper{
     position: relative;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid var(--clr-gallery-li-border);
+    border-right: 1px solid var(--clr-gallery-li-border);
+    border-bottom: 1px solid var(--clr-gallery-li-border);
     padding: 20px 24px;
-    background-color: white;
+    background-color: var(--bg-white);
     z-index: 1;
 }
 
@@ -654,8 +654,7 @@ letter-spacing: 0.03em;
     display: inline-block;
     margin-right: 10px;
     fill: currentColor;
-
-    transition: fill 250ms var(--main-transition);
+    transition: fill 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -698,7 +697,7 @@ color: var(--clr-white);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color 250ms var(--main-transition);
+    transition: background-color 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -713,6 +712,7 @@ color: var(--clr-white);
 .main-footer__svg{
 fill: var(--clr-white);
 }
+
 
 .our-clients__svg-wrapper{
     display: flex;
@@ -742,13 +742,13 @@ fill: var(--clr-white);
     border: 1px solid var(--icons-bg);
     border-radius: 4px;
 
-    transition: border 250ms var(--main-transition);
+    transition: border 250ms var(--transition-cubic-bezier);
 
    
 }
 .our-clients__svg{
     fill: var(--icons-bg);
-    transition: fill 250ms var(--main-transition);
+    transition: fill 250ms var(--transition-cubic-bezier);
 
 }
 
@@ -802,12 +802,8 @@ fill: var(--clr-white);
 
     transform: translate(-50%, -50%);
 
-    /* opacity: 0; */
-    /* translate */
-    /* scale: ; */
-
     z-index: 0;
-    background-color: #FFFFFF;
+    background-color: var(--clr-white);
 
 }
 
@@ -911,7 +907,7 @@ margin-bottom: 20px;
     padding-left: 16px;
     font-weight: normal;
 
-    transition: outline-color 250ms var(--main-transition);
+    transition: outline-color 250ms var(--transition-cubic-bezier);
 
 }
 
