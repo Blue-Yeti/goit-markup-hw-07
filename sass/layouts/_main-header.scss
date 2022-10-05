@@ -8,17 +8,18 @@
     fill: currentColor;
     transition: fill 250ms var(--transition-cubic-bezier);
 
-}
-.link:hover .svg-small, .link:focus .svg-small{
-    fill: var(--clr-accent);
-    outline: none;
+    .link:hover &, .link:focus &{
+        fill: var(--clr-accent);
+        outline: none;
+    }
 }
 
 .nav-list__li{
     margin-right: 50px;
-}
-.nav-list__li:last-child{
+    
+    &:last-child{
     margin-right: 0;
+}
 }
 
 .nav-list__link{
@@ -31,10 +32,11 @@
 }
 .contacts__li{
     margin-right: 50px;
+
+    &:last-child{
+        margin-right: 0;
+    }
 }
-.contacts__li:last-child{
-    margin-right: 0;
-}
-.contacts__link.link{
+.contacts__link{
     color: var(--clr-paragraph-primary);
 }

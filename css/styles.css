@@ -1021,24 +1021,22 @@ margin-bottom: 20px;
 
 }
 
-.modal-window label{
+.modal-window__label{
     display: block;
-
     width: 100%;
-
 }
 
-.modal-window label p{
+.modal-window__label-p{
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: #757575;;
 
     margin-bottom: 4px;
 
 }
-
-.modal-window form input{
+.modal-window__input{
+/* .modal-window form input{ */
     width: 100%;
     height: 40px;
 

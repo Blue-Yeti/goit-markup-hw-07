@@ -26,13 +26,14 @@
     text-decoration: none;
     color: var(--clr-white);
     line-height: 1.71;
+    
+    &:hover,
+    &:focus{
+        color: var(--clr-accent);
+        outline: none;
+    }
 }
 
-.main-footer__p-link:hover,
-.main-footer__p-link:focus{
-    color: var(--clr-accent);
-    outline: none;
-}
 
 .main-footer__join-us{
     margin-left: 70px;
@@ -66,14 +67,12 @@
 
     transition: background-color 250ms var(--transition-cubic-bezier);
 
+    &:hover,
+    &:focus {
+        background-color: var(--clr-accent);
+        outline: none;
+    }
 }
-
-.main-footer__icon-wrapper:hover,
-.main-footer__icon-wrapper:focus {
-    background-color: var(--clr-accent);
-    outline: none;
-}
-
 
 .main-footer__svg{
 fill: var(--clr-white);

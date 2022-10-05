@@ -29,22 +29,24 @@
 
     transition: border 250ms var(--transition-cubic-bezier);
 
+    &:hover,
+    &:focus{
+    outline: none;
+    border: 1px solid var(--clr-accent);
+
+}
+
    
 }
 .our-clients__svg{
     fill: var(--icons-bg);
     transition: fill 250ms var(--transition-cubic-bezier);
 
+    .our-clients__link:hover &,
+    .our-clients__link:focus &{
+        outline: none;
+        fill: var(--clr-accent);
+    }
 }
 
-.our-clients__link:hover .our-clients__svg,
-.our-clients__link:focus .our-clients__svg{
-    outline: none;
-    fill: var(--clr-accent);
-}
-.our-clients__link:hover,
-.our-clients__link:focus{
-    outline: none;
-    border: 1px solid var(--clr-accent);
 
-}

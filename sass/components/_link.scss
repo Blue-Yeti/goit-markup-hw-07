@@ -9,10 +9,9 @@
 
     transition: color 250ms var(--transition-cubic-bezier);
 
-}
+    &:hover, &:focus{
+        outline: none;
+        color: var(--clr-accent) !important;
 
-
-.link:hover, .link:focus{
-    outline: none;
-    color: var(--clr-accent) !important;
+    }
 }

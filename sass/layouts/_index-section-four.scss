@@ -61,25 +61,26 @@
     outline: none;
 
     transition: background-color 250ms var(--transition-cubic-bezier);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: var(--clr-accent);
+    }
 }
 
-.section-four__icon-wrapper:hover,
-.section-four__icon-wrapper:focus {
-    outline: none;
-    background-color: var(--clr-accent);
-}
 
 .section-four__svg{
     fill: var(--icons-bg);
     transition: fill 250ms var(--transition-cubic-bezier);
 
+    .section-four__icon-wrapper:hover &,
+    .section-four__icon-wrapper:focus & {
+        outline: none;
+        fill: var(--clr-white);
+    }
 }
 
-.section-four__icon-wrapper:hover .section-four__svg,
-.section-four__icon-wrapper:focus .section-four__svg {
-    outline: none;
-    fill: var(--clr-white);
-}
 
 .section-four__icon-wrapper{
     display: flex;
@@ -88,13 +89,9 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-}
-
-.section-four__icon-wrapper:hover,
-.section-four__icon-wrapper:focus {
-    background-color: var(--clr-accent);
-}
-.section-four__icon-wrapper:hover .section-four__svg,
-.section-four__icon-wrapper:focus .section-four__svg {
-    fill: var(--clr-white);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--clr-accent);
+    }
 }

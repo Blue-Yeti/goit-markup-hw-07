@@ -18,12 +18,12 @@
 // components
 @import './components/link';
 @import './components/backdrop';
-@import './components/index-modal-windows';
+@import './components/modal-window';
 @import './components/newsletter';
-@import './components/titles';
 @import './components/main-logo';
 
 //layouts
+@import './layouts/index-modal-windows';
 @import './layouts/index-our-clients';
 @import './layouts/index-section-four';
 @import './layouts/index-section-one';
@@ -33,5 +33,4 @@
 @import './layouts/main-header';
 @import './layouts/portfolio-buttons';
 @import './layouts/portfolio-cards';
-@import './layouts/portfolio-section-one';
 

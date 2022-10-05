@@ -16,8 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>WebStudio</title>
   </head>
@@ -387,41 +386,41 @@
       <div class="modal-window">
         <form class="modal-window__form">
           <p class="modal-window__text">Leave your information and we'll call you back</p>
-          <label>
-            <p>Name</p>
+          <label class="modal-window__label">
+            <p class="modal-window__label-p">Name</p>
             <div class="modal-window__input-wrapper">
-              <input type="text" name="name" autocomplete="off" />
+              <input class="modal-window__input" type="text" name="name" autocomplete="off" />
               <svg class="modal-window__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </label>
-          <label>
-            <p>Telephone</p>
+          <label class="modal-window__label">
+            <p class="modal-window__label-p">Telephone</p>
             <div class="modal-window__input-wrapper">
-              <input type="tel" name="tel-num" autocomplete="off" />
+              <input class="modal-window__input" type="tel" name="tel-num" autocomplete="off" />
               <svg class="modal-window__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </label>
-          <label>
-            <p>E-mail</p>
+          <label class="modal-window__label">
+            <p class="modal-window__label-p">E-mail</p>
             <div class="modal-window__input-wrapper">
-              <input type="email" name="email" autocomplete="off" />
+              <input class="modal-window__input" type="email" name="email" autocomplete="off" />
               <svg class="modal-window__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </label>
-          <label>
-            <p>Comments</p>
-            <textarea name="modal-textaria" rows="10" placeholder="Enter the text"></textarea>
+          <label class="modal-window__label">
+            <p class="modal-window__label-p">Comments</p>
+            <textarea class="modal-window__textarea" name="modal-textaria" rows="10" placeholder="Enter the text"></textarea>
           </label>
 
           <label class="modal-window__checkbox-label">
-            <input class="| visually-hidden" type="checkbox" name="" required />
-            <span class="modal-window__accept-span"> I agree with the newsletter and accept the <a href="#">Terms </a></span>
+            <input class="modal-window__accept-checkbox | visually-hidden" type="checkbox" name="" required />
+            <span class="modal-window__accept-span"> I agree with the newsletter and accept the <a class="modal-window__terms" href="#">Terms </a></span>
           </label>
 
           <button class="modal-window__submit-btn" type="submit">Send</button>
